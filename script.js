@@ -2,14 +2,14 @@
   document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('.form');
     form.addEventListener('submit', function(event) {
-      event.preventDefault(); // Предотвращаем отправку формы
+      event.preventDefault(); 
 
-      const userInput = document.querySelector('.form__input').value.trim(); // Получаем значение поля ввода и удаляем лишние пробелы
+      const userInput = document.querySelector('.form__input').value.trim(); 
 
-      if (userInput !== '') { // Проверяем, что поле не пустое
-        alert('Відгук успішно опублікований'); // Выводим сообщение об успешной отправке
+      if (userInput !== '') { 
+        alert('Відгук успішно опублікований'); 
       } else {
-        alert('Будь ласка, заповніть поле вводу.'); // Выводим сообщение об ошибке
+        alert('Будь ласка, заповніть поле вводу.'); 
       }
     });
   });
